@@ -25,3 +25,11 @@ Pull requests welcome, please follow the basic workflow:
 
 [gitter-image]: https://badges.gitter.im/Join%20Chat.svg
 [gitter-url]: https://gitter.im/kolodny/exercises
+
+
+Level 1: map, value, once
+Level 2: curry, memoize
+Level 3: binary-search, flatten, invert-tree
+Level 4: sort, flatten-thunk
+Level 5: debounce, jasmine-async, middleware
+Level 6: throttle-promises, morse-code, async, merkle.
