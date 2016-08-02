@@ -1,19 +1,11 @@
 function value(arg) {
-  if (isFunction(arg)) {
-    var val = arg();
+  var val = arg;
 
-    while (!isValue(val)) {
-      val = val();
-    }
-
-    return val;
-  } else {
-    return arg;
+  while (!isValue(val)) {
+    val = val();
   }
-}
 
-var isFunction = function(obj) {
-  return !!(obj && obj.constructor && obj.call && obj.apply);
+  return val;
 }
 
 var isValue = function(val) {
