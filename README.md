@@ -27,7 +27,7 @@ Pull requests welcome, please follow the basic workflow:
 [gitter-url]: https://gitter.im/kolodny/exercises
 
 
-Level 1: map, value, once
+Level 1: map, value, once - done
 Level 2: curry, memoize
 Level 3: binary-search, flatten, invert-tree
 Level 4: sort, flatten-thunk
