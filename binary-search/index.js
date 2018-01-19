@@ -1,20 +1,13 @@
 function binarySearch(array, query) {
-  array.sort();
+  let mid = Math.floor((array.length - 1) / 2);
 
-  if (!array.length) return -1;
-
-  var min = 0;
-  var max = array.length - 1;
-  var guess;
-
-  while (max < min) {
-    guess = Math.floor(max / min);
-    if (array[guess] === query) {
-      return guess;
-    } else if (array[guess] < query) {
-      min = guess + 1;
+  while (array.length) {
+    if (array[mid] === query) {
+      return mid;
+    } else if (array[mid] < query) {
+      return binarySearch(array.slice(mid + 1), query);
     } else {
-      max = guess - 1;
+      return binarySearch(array.slice(0, mid - 1), query);
     }
   }
   return -1;
